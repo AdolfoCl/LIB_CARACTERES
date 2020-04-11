@@ -1,0 +1,343 @@
+$TADS                                                                   00001000ADC-200403
+$SET SHARING=PRIVATE                                                    00002000ADC-200410
+ BEGIN                                                                  10000000ADC-180712
+ FILE                                                                   10000010ADC-180824
+   SALIDA                                                               10000020ADC-180824
+    (KIND=DISK                                                          10000030ADC-180824
+    ,PROTECTION=PROTECTED                                               10000040ADC-180824
+    ,MAXRECSIZE=14                                                      10000050ADC-180824
+    ,UNITS=CHARACTERS                                                   10000060ADC-180824
+    ,BLOCKSIZE=4200                                                     10000070ADC-180824
+    )                                                                   10000080ADC-180824
+  ;                                                                     10000090ADC-180824
+ TRANSLATETABLE                                                         10000100ADC-180712
+   t (EBCDIC TO " ",                                                    10000200ADC-180713
+      48"42" TO "a",   %¡                                               10000202ADC-180713
+      48"43" TO "a",   %¢                                               10000204ADC-180713
+      48"44" TO "a",   %£                                               10000206ADC-180713
+      48"45" TO "a",   %¤                                               10000208ADC-180713
+      48"46" to "a",   %¥                                               10000210ADC-180713
+      48"47" TO "a",   %¦                                               10000212ADC-180713
+      48"48" TO "c",   %§                                               10000214ADC-180713
+      48"49" TO "\",   %¨                                               10000216ADC-180713
+      48"51" TO "e",   %©                                               10000218ADC-180713
+      48"52" TO "e",   %ª                                               10000220ADC-180713
+      48"53" TO "e",   %«                                               10000222ADC-180713
+      48"54" TO "e",   %¬                                               10000224ADC-180713
+      48"55" TO "i",   %­                                               10000226ADC-180713
+      48"56" TO "i",   %®                                               10000228ADC-180713
+      48"57" TO "i",   %¯                                               10000230ADC-180713
+      48"58" TO "i",   %°                                               10000232ADC-180713
+      48"59" TO "B",   %±                                               10000234ADC-180713
+      48"62" TO "A",   %²                                               10000236ADC-180713
+      48"63" TO "A",   %³                                               10000238ADC-180713
+      48"64" TO "A",   %´                                               10000240ADC-180713
+      48"65" TO "A",   %µ                                               10000300ADC-180713
+      48"66" TO "A",   %¶                                               10000310ADC-180713
+      48"67" TO "A",   %·                                               10000320ADC-180713
+      48"68" TO "C",   %¸                                               10000330ADC-180713
+      48"69" TO "\",   %¹                                               10000340ADC-180713
+      48"70" TO "o",   %º                                               10000350ADC-180713
+      48"71" TO "E",   %»                                               10000400ADC-180713
+      48"72" TO "E",   %¼                                               10000420ADC-180713
+      48"73" TO "E",   %½                                               10000440ADC-180713
+      48"74" TO "E",   %¾                                               10000460ADC-180713
+      48"75" TO "I",   %¿                                               10000500ADC-180713
+      48"76" TO "I",   %À                                               10000502ADC-180713
+      48"77" TO "I",   %Á                                               10000504ADC-180713
+      48"78" TO "I",   %Â                                               10000506ADC-180713
+      48"79" TO "'",   %`                                               10000508ADC-180713
+      48"80" TO "O",   %Ã                                               10000510ADC-180713
+      48"8A" TO "<",   %Ä                                               10000512ADC-180713
+      48"8B" TO ">",   %Å                                               10000514ADC-180713
+      48"8D" TO "y",   %Ç                                               10000516ADC-180713
+      48"8F" TO "+",   %É                                               10000518ADC-180713
+      48"90" TO "o",   %Ê                                               10000520ADC-180713
+      48"9A" TO "a",   %Ë                                               10000522ADC-180713
+      48"9B" TO "o",   %Ì                                               10000524ADC-180713
+      48"9C" TO "a",   %Í                                               10000526ADC-180713
+      48"9D" TO ",",   %Î                                               10000528ADC-180713
+      48"9E" TO "A",   %Ï                                               10000530ADC-180713
+      48"9F" TO "E",   %Ð                                               10000532ADC-180713
+      48"A0" TO "\",   %Ñ                                               10000534ADC-180720
+      48"AA" TO "!",   %Ò                                               10000538ADC-180713
+      48"AB" TO "?",   %?                                               10000540ADC-180824
+      48"AC" TO "D",   %V                                               10000542ADC-180713
+      48"AD" TO "Y",   %Õ                                               10000544ADC-180713
+      48"B1" TO "L",   %Ù                                               10000546ADC-180713
+      48"B2" TO "Y",   %Ú                                               10000548ADC-180713
+      48"B4" TO "c",   %Ü                                               10000550ADC-180713
+      48"BB" TO "O",   %º                                               10000552ADC-180824
+      48"BC" TO "_",   %ä                                               10000554ADC-180713
+      48"BE" TO "'",   %æ                                               10000556ADC-180713
+      48"BF" TO "x",   %ç                                               10000558ADC-180713
+      48"CA" TO "-",   %è                                               10000560ADC-180713
+      48"CB" TO "o",   %é                                               10000562ADC-180713
+      48"CC" TO "o",   %ê                                               10000564ADC-180713
+      48"CD" TO "o",   %ë                                               10000566ADC-180713
+      48"CE" TO "o",   %ì                                               10000568ADC-180713
+      48"CF" TO "o",   %í                                               10000570ADC-180713
+      48"DB" TO "u",   %ï                                               10000572ADC-180713
+      48"DC" TO "u",   %ð                                               10000574ADC-180713
+      48"DD" TO "u",   %ñ                                               10000576ADC-180713
+      48"DE" TO "u",   %ò                                               10000578ADC-180713
+      48"DF" TO "y",   %ó                                               10000580ADC-180713
+      48"E1" TO "/",   %Ÿ                                               10000582ADC-180713
+      48"EA" TO "o",   %ô                                               10000584ADC-180713
+      48"EB" TO "O",   %õ                                               10000586ADC-180713
+      48"EC" TO "O",   %ö                                               10000588ADC-180713
+      48"ED" TO "O",   %÷                                               10000590ADC-180713
+      48"EE" TO "O",   %ø                                               10000600ADC-180713
+      48"EF" TO "O",   %ù                                               10000620ADC-180713
+      48"FB" TO "U",   %û                                               10000640ADC-180713
+      48"FC" TO "U",   %ü                                               10000660ADC-180713
+      48"FD" TO "U",   %ý                                               10000680ADC-180713
+      48"FE" TO "U",   %þ                                               10000700ADC-180713
+      48"7F" TO 48"7F",%"                                               10003480ADC-180713
+      "abcdefghijklmnopqrstuvwxyz" TO                                   10003500ADC-180713
+      "abcdefghijklmnopqrstuvwxyz",                                     10003600ADC-180713
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZ" TO                                   10003700ADC-180713
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZ",                                     10003800ADC-180713
+      "1234567890" TO                                                   10003900ADC-180713
+      "1234567890",                                                     10004000ADC-180713
+      "|!#$%&/\()='*+~]}[{^_-:.;,<>@?" TO                               10004200ADC-180824
+      "|!#$%&/\()='*+~]}[{^_-:.;,<>@?"                                  10004300ADC-180824
+     )                                                                  10004400ADC-180824
+  ,t2(EBCDIC TO EBCDIC                                                  10004420ADC-180824
+     ,"\" TO 48"A0"                                                     10004440ADC-180824
+     )                                                                  10004460ADC-180824
+  ;                                                                     10004480ADC-180824
+ TRUTHSET                                                               10004482ADC-200403
+   charsDisplay                                                         10004484ADC-200403
+     (48"7F" OR                                                         10004486ADC-200403
+      "abcdefghijklmnopqrstuvwxyz" OR                                   10004488ADC-200403
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZ" OR                                   10004490ADC-200403
+      "1234567890" OR                                                   10004492ADC-200403
+      "|!#$%&/\()='*+~]}[{^_-:.;,<>@Ó? "                                10004494ADC-200403
+     )                                                                  10004496ADC-200403
+  ,charsXML                                                             10004498ADC-200410
+     ("abcdefghijklmnopqrstuvwxyz" OR                                   10004500ADC-200410
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZ" OR                                   10004502ADC-200403
+      "1234567890" OR                                                   10004504ADC-200403
+      "|!#$%/\()=*+~]}[{^_-:.;,@Ó? "                                    10004506ADC-200410
+     )                                                                  10004508ADC-200410
+  ,xmlForbidden                                                         10004510ADC-200410
+     (48"7F" OR "&" OR "<" OR ">" OR "'" OR NOT charsXML)               10004512ADC-200410
+  ;                                                                     10004520ADC-200403
+ PROCEDURE translateText(input);                                        10004530ADC-180713
+   EBCDIC ARRAY input[0];                                               10004550ADC-180713
+   BEGIN                                                                10004600ADC-180712
+   REPLACE input                                                        10004700ADC-180712
+        BY input FOR SIZE(input) WITH t;                                10004800ADC-180712
+   END of translateText;                                                10004900ADC-180712
+                                                                        10005000ADC-180712
+ PROCEDURE backSlash2Egne(input);                                       10005002ADC-180824
+   EBCDIC ARRAY input[0];                                               10005004ADC-180824
+   BEGIN                                                                10005006ADC-180824
+   REPLACE input                                                        10005008ADC-180824
+        BY input FOR SIZE(input) WITH t2;                               10005010ADC-180824
+   END of backSlash2Egne;                                               10005012ADC-180824
+                                                                        10005014ADC-180824
+ PROCEDURE displayAllEBCDIC(input);                                     10005016ADC-180824
+   EBCDIC ARRAY input[0];                                               10005018ADC-180824
+   BEGIN                                                                10005020ADC-180824
+   INTEGER                                                              10005022ADC-180824
+     i                                                                  10005024ADC-180824
+    ;                                                                   10005026ADC-180824
+   POINTER                                                              10005028ADC-180824
+     p                                                                  10005030ADC-180824
+    ;                                                                   10005032ADC-180824
+                                                                        10005034ADC-180824
+   IF SIZE(input) < 256 THEN                                            10005036ADC-180824
+     RESIZE(input, 256);                                                10005038ADC-180824
+   p := input;                                                          10005040ADC-180824
+   i := -1;                                                             10005042ADC-180824
+   WHILE i < 255 DO                                                     10005044ADC-180824
+     REPLACE p:p BY (i:=*+1).[7:48] FOR 1;                              10005046ADC-180824
+   END of displayAllEBCDIC;                                             10005048ADC-180824
+                                                                        10005050ADC-180824
+ PROCEDURE BUSCARRAROS(input);                                          10005052ADC-200403
+   EBCDIC ARRAY        input[0];                                        10005054ADC-200403
+   BEGIN                                                                10005056ADC-200403
+   INTEGER                                                              10005058ADC-200403
+     n                                                                  10005060ADC-200403
+    ;                                                                   10005062ADC-200403
+   POINTER                                                              10005064ADC-200403
+     p                                                                  10005066ADC-200403
+    ;                                                                   10005068ADC-200403
+                                                                        10005070ADC-200403
+   REPLACE input BY "000000";                                           10005072ADC-200403
+   n := INTEGER(input[6],5);                                            10005074ADC-200403
+   p := input[11];                                                      10005076ADC-200403
+   SCAN p FOR n:n WHILE IN charsDisplay;                                10005078ADC-200403
+   IF n ^= 0 THEN                                                       10005080ADC-200403
+     BEGIN                                                              10005082ADC-200403
+     REPLACE input BY "1";                                              10005084ADC-200403
+     REPLACE input[1] BY (INTEGER(input[6],5)-n)FOR 5 DIGITS;           10005086ADC-200407
+     END;                                                               10005088ADC-200403
+   END of BUSCARRAROS;                                                  10005090ADC-200403
+                                                                        10005092ADC-200403
+ PROCEDURE FIRSTHEXA(input);                                            10005094ADC-200407
+   EBCDIC ARRAY      input[0];                                          10005096ADC-200407
+   BEGIN                                                                10005098ADC-200407
+   HEX ARRAY                                                            10005100ADC-200407
+     hInput[0] = input                                                  10005102ADC-200407
+    ,hDummy[0:0]                                                        10005104ADC-200407
+    ;                                                                   10005106ADC-200407
+   POINTER                                                              10005108ADC-200407
+     p                                                                  10005110ADC-200407
+    ,q                                                                  10005112ADC-200407
+    ;                                                                   10005114ADC-200407
+   INTEGER                                                              10005116ADC-200407
+     n                                                                  10005118ADC-200407
+    ,i                                                                  10005120ADC-200407
+    ;                                                                   10005122ADC-200407
+                                                                        10005124ADC-200407
+   i := n := INTEGER(input[6],5);                                       10005126ADC-200407
+   RESIZE(hDummy, n, discard);                                          10005128ADC-200407
+   q := hDummy[0];                                                      10005130ADC-200407
+   p := hInput[22];                                                     10005132ADC-200407
+   WHILE (i > 0) DO                                                     10005134ADC-200407
+     BEGIN                                                              10005136ADC-200407
+     REPLACE q:q BY p:p FOR 1;                                          10005138ADC-200407
+     p :=*+1;                                                           10005140ADC-200407
+     i :=*-1;                                                           10005142ADC-200407
+     END;                                                               10005144ADC-200407
+   REPLACE p:input[n+11]                                                10005146ADC-200407
+        BY q:hDummy[0] FOR n WITH HEXTOEBCDIC;                          10005148ADC-200407
+   END of FIRSTHEXA;                                                    10005150ADC-200407
+                                                                        10005152ADC-200407
+ PROCEDURE SECONDHEXA(input);                                           10006000ADC-200407
+   EBCDIC ARRAY       input[0];                                         10007000ADC-200407
+   BEGIN                                                                10008000ADC-200407
+   HEX ARRAY                                                            10009000ADC-200407
+     hInput[0] = input                                                  10010000ADC-200407
+    ,hDummy[0:0]                                                        10011000ADC-200407
+    ;                                                                   10012000ADC-200407
+   POINTER                                                              10013000ADC-200407
+     p                                                                  10014000ADC-200407
+    ,q                                                                  10015000ADC-200407
+    ;                                                                   10016000ADC-200407
+   INTEGER                                                              10017000ADC-200407
+     n                                                                  10018000ADC-200407
+    ,i                                                                  10019000ADC-200407
+    ;                                                                   10020000ADC-200407
+                                                                        10021000ADC-200407
+   i := n := INTEGER(input[6],5);                                       10022000ADC-200407
+   RESIZE(hDummy, n, discard);                                          10023000ADC-200407
+   q := hDummy[0];                                                      10024000ADC-200407
+   p := hInput[22+1];                                                   10025000ADC-200407
+   WHILE (i > 0) DO                                                     10026000ADC-200407
+     BEGIN                                                              10027000ADC-200407
+     REPLACE q:q BY p:p FOR 1;                                          10028000ADC-200407
+     p :=*+1;                                                           10029000ADC-200407
+     i :=*-1;                                                           10030000ADC-200407
+     END;                                                               10031000ADC-200407
+   REPLACE p:input[n+11]                                                10032000ADC-200407
+        BY q:hDummy[0] FOR n WITH HEXTOEBCDIC;                          10033000ADC-200407
+   END of SECONDHEXA;                                                   10034000ADC-200407
+                                                                        10034100ADC-200410
+ REAL ARRAY                                                             10034120ADC-200410
+   rDummy[0:0]                                                          10034140ADC-200410
+  ;                                                                     10034160ADC-200410
+ EBCDIC ARRAY                                                           10034200ADC-200410
+   dummy[0] = rDummy                                                    10034300ADC-200410
+  ;                                                                     10034400ADC-200410
+ HEX ARRAY                                                              10034500ADC-200410
+   hDummy[0] = rDummy                                                   10034600ADC-200410
+  ;                                                                     10034700ADC-200410
+                                                                        10035000ADC-200407
+ PROCEDURE SCAPEXML(input, rslt);                                       10035020ADC-200410
+   EBCDIC ARRAY     input, rslt[0];                                     10035040ADC-200410
+   BEGIN                                                                10035060ADC-200410
+   INTEGER                                                              10035080ADC-200410
+     n                                                                  10035100ADC-200403
+    ;                                                                   10035120ADC-200403
+   POINTER                                                              10035140ADC-200403
+     p                                                                  10035160ADC-200403
+    ,q                                                                  10035180ADC-200410
+    ;                                                                   10035200ADC-200403
+                                                                        10035220ADC-200403
+   REPLACE rslt BY "000000";                                            10035240ADC-200410
+   n := INTEGER(input[1],5);                                            10035260ADC-200410
+   p := input[6];                                                       10035280ADC-200410
+   q := rslt[6];                                                        10035300ADC-200410
+   REPLACE q:q BY p:p FOR n:n UNTIL IN xmlForbidden;                    10035320ADC-200410
+   WHILE (n ^= 0) DO                                                    10035340ADC-200410
+     BEGIN                                                              10035360ADC-200410
+     IF (p = 48"7F") THEN                                               10035380ADC-200410
+       REPLACE q:q BY "&quot;"                                          10035400ADC-200410
+     ELSE IF (p = "'") THEN                                             10035420ADC-200410
+       REPLACE q:q BY "&apos;"                                          10035440ADC-200410
+     ELSE IF (p = "<") THEN                                             10035460ADC-200410
+       REPLACE q:q BY "&lt;"                                            10035480ADC-200410
+     ELSE IF (p = ">") THEN                                             10035500ADC-200410
+       REPLACE q:q BY "&gt;"                                            10035520ADC-200410
+     ELSE IF (p = "&") THEN                                             10035540ADC-200410
+       REPLACE q:q BY "&amp;"                                           10035560ADC-200410
+     ELSE                                                               10035565ADC-200410
+       BEGIN                                                            10035570ADC-200410
+       REPLACE dummy[5] BY p FOR 1 WITH EBCDICTOASCII;                  10035575ADC-200410
+       REPLACE q:q BY "&#",rDummy[0]FOR*DIGITS,";";                     10035580ADC-200410
+       END;                                                             10035585ADC-200410
+     REPLACE q:q BY p:p+1 FOR n:n-1 UNTIL IN xmlForbidden;              10035600ADC-200410
+     END;                                                               10035620ADC-200410
+   REPLACE rslt[1] BY (OFFSET(q)-6)FOR 5 DIGITS;                        10035640ADC-200410
+   END of SCAPEXML;                                                     10035660ADC-200410
+                                                                        10035680ADC-200410
+ EXPORT                                                                 10036000ADC-180713
+   translateText                                                        10037000ADC-180713
+  ,backSlash2Egne                                                       10038000ADC-180824
+  ,displayAllEBCDIC                                                     10039000ADC-180824
+  ,BUSCARRAROS                                                          10040000ADC-200403
+  ,FIRSTHEXA                                                            10041000ADC-200407
+  ,SECONDHEXA                                                           10042000ADC-200407
+  ,SCAPEXML                                                             10042500ADC-200410
+  ;                                                                     10043000ADC-180713
+                                                                        10044000ADC-180824
+ PROCEDURE genListado;                                                  10045000ADC-180824
+   BEGIN                                                                10046000ADC-180824
+   EBCDIC ARRAY                                                         10047000ADC-180824
+     e                                                                  10048000ADC-180824
+    ,s[0:13]                                                            10049000ADC-180824
+    ;                                                                   10050000ADC-180824
+   HEX ARRAY                                                            10051000ADC-180824
+     he[0] = e                                                          10052000ADC-180824
+    ;                                                                   10053000ADC-180824
+   INTEGER                                                              10054000ADC-180824
+     i                                                                  10055000ADC-180824
+    ;                                                                   10056000ADC-180824
+                                                                        10057000ADC-180824
+   i := -1;                                                             10058000ADC-180824
+   WHILE (i:=*+1 < 256) DO                                              10059000ADC-180824
+     BEGIN                                                              10060000ADC-180824
+     REPLACE e BY i.[7:48] FOR 1;                                       10061000ADC-180824
+     REPLACE s                                                          10062000ADC-180824
+          BY "48" """, he FOR 2 WITH HEXTOEBCDIC, "" TO """",           10063000ADC-180824
+             i.[7:48] FOR 1, """;                                       10064000ADC-180824
+     translateText(s);                                                  10065000ADC-180824
+     WRITE(SALIDA, 14, s);                                              10066000ADC-180824
+     END;                                                               10067000ADC-180824
+   LOCK(SALIDA);                                                        10068000ADC-180824
+   END of genListado;                                                   10069000ADC-180824
+                                                                        10070000ADC-180824
+ IF BOOLEAN(MYSELF.LIBRARYSTATE) THEN                                   10071000ADC-180824
+   FREEZE(TEMPORARY)                                                    10072000ADC-180806
+ ELSE                                                                   10073000ADC-180806
+   BEGIN                                                                10074000ADC-180806
+   EBCDIC ARRAY                                                         10075000ADC-200403
+     input, rslt[0:200]                                                 10076000ADC-200410
+    ;                                                                   10077000ADC-200403
+                                                                        1007800001.001.001
+  %genListado;                                                          10079000ADC-200403
+                                                                        10080000ADC-200403
+   REPLACE input                                                        10081000ADC-200403
+        BY "000070",                                                    10082000ADC-200410
+48"0001020304",                                                         10082500ADC-200410
+"ÂÂ789ABCDEFGHIJKLMNOPQRSTUVWXYZ|!#$%&/()=?\'*+~}]{[-_.:,;<>cdefgh"     10083000ADC-200410
+;                                                                       10084000ADC-200403
+   SCAPEXML(input,rslt);                                                10085000ADC-200410
+                                                                        10087000ADC-180808
+   END;                                                                 10088000ADC-180808
+                                                                        10089000ADC-180712
+ END.                                                                   10090000ADC-180712

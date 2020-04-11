@@ -1,0 +1,6 @@
+open 172.16.2.246
+prjuzb
+lb4190
+get ARC/172_16_4_70/FUENTE/LIB/TRADUCE/BATFILE fuente_batfile.bat
+get ARC/172_16_4_70/FUENTE/LIB/TRADUCE/GETFILES fuente_getfiles
+quit
