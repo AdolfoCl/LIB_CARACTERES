@@ -113,13 +113,13 @@ $SET SHARING=PRIVATE                                                    00002000
       "abcdefghijklmnopqrstuvwxyz" OR                                   10004488ADC-200403
       "ABCDEFGHIJKLMNOPQRSTUVWXYZ" OR                                   10004490ADC-200403
       "1234567890" OR                                                   10004492ADC-200403
-      "|!#$%&/\()='*+~]}[{^_-:.;,<>@Ó? "                                10004494ADC-200403
+      "|!#$%&/\()='*+~]}[{^_-:.;,<>@? "                                 10004494ADC-200428
      )                                                                  10004496ADC-200403
   ,charsXML                                                             10004498ADC-200410
      ("abcdefghijklmnopqrstuvwxyz" OR                                   10004500ADC-200410
       "ABCDEFGHIJKLMNOPQRSTUVWXYZ" OR                                   10004502ADC-200403
       "1234567890" OR                                                   10004504ADC-200403
-      "|!#$%/\()=*+~]}[{^_-:.;,@Ó? "                                    10004506ADC-200410
+      "|!#$%/\()=*+~]}[{^_-:.;,@? "                                     10004506ADC-200428
      )                                                                  10004508ADC-200410
   ,xmlForbidden                                                         10004510ADC-200410
      (48"7F" OR "&" OR "<" OR ">" OR "'" OR NOT charsXML)               10004512ADC-200410
