@@ -122,7 +122,7 @@ $SET SHARING=PRIVATE                                                    00002000
       "|!#$%/\()=*+~]}[{^_-:.;,@? "                                     10004506ADC-200428
      )                                                                  10004508ADC-200410
   ,xmlForbidden                                                         10004510ADC-200410
-     (48"7F" OR "&" OR "<" OR ">" OR "'" OR NOT charsXML)               10004512ADC-200410
+     (48"7F" OR "&" OR "<" OR ">" OR "'" OR "\" OR NOT charsXML)        10004512ADC-200514
   ;                                                                     10004520ADC-200403
  PROCEDURE translateText(input);                                        10004530ADC-180713
    EBCDIC ARRAY input[0];                                               10004550ADC-180713
@@ -275,6 +275,8 @@ $SET SHARING=PRIVATE                                                    00002000
        REPLACE q:q BY "&gt;"                                            10035520ADC-200410
      ELSE IF (p = "&") THEN                                             10035540ADC-200410
        REPLACE q:q BY "&amp;"                                           10035560ADC-200410
+     ELSE IF (p = "\") THEN                                             10035562ADC-200514
+       REPLACE q:q BY "&#209;"                                          10035564ADC-200514
      ELSE                                                               10035565ADC-200410
        BEGIN                                                            10035570ADC-200410
        REPLACE dummy[5] BY p FOR 1 WITH EBCDICTOASCII;                  10035575ADC-200410
