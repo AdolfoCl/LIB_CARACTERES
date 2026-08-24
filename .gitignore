@@ -1,3 +1,7 @@
 /fuente_batfile.bat
 /fuente_getfiles
 /_FUENTE/_LIB/_TRADUCE/ClientAuthDebugFile.txt
+
+# Scripts FTP con host y credenciales del equipo MCP: se derivan de los .example
+control_getfiles
+symbol_getfiles

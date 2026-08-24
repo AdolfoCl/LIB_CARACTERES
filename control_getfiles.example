@@ -1,0 +1,6 @@
+open <MCP-HOST>
+<USERCODE>
+<PASSWORD>
+get ARC/<NODE>/FUENTE/LIB/TRADUCE/BATFILE fuente_batfile.bat
+get ARC/<NODE>/FUENTE/LIB/TRADUCE/GETFILES fuente_getfiles
+quit
