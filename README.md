@@ -1,5 +1,11 @@
 # LIB_CARACTERES
-Library Algol (Unisys MCP) para apoyar programas COBOL (Unisys MCP) con la traducción de caracteres
+
+An ALGOL library for Unisys MCP that gives COBOL programs character translation
+they cannot do on their own.
+
+COBOL on the MCP has no comfortable way to reach a character by its code, or to
+map one code to another across the whole of a record. This library does it, and
+COBOL calls it like any other library.
 
 ## Getting the sources off the MCP machine
 
