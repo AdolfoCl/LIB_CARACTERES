@@ -13,3 +13,7 @@ COBOL calls it like any other library.
 it carries the host, usercode and password of the machine the sources live on.
 Copy `control_getfiles.example` (and `symbol_getfiles.example` where present) to the
 name without the suffix and fill in your own values.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
